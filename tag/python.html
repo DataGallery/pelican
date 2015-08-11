@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>OpenJC Blog - python</title>
-        <link rel="stylesheet" href="../theme/css/main.css" />
+        <title>Data Gallery Blog - python</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
 
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -12,29 +12,29 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="../">OpenJC Blog </a></h1>
+                <h1><a href="/">Data Gallery Blog </a></h1>
                 <nav><ul>
-                    <li><a href="../pages/about.html">About</a></li>
-                    <li><a href="../category/general.html">General</a></li>
-                    <li><a href="../category/technical.html">Technical</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/category/general.html">General</a></li>
+                    <li><a href="/category/technical.html">Technical</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="../Pelican-On-GithHub-Pages.html">How to setup Pelican Blog Hosted on GitHub Project Pages</a></h1>
+                    <h1 class="entry-title"><a href="/Pelican-On-GithHub-Pages.html">How to setup Pelican Blog Hosted on GitHub Project Pages</a></h1>
 <footer class="post-info">
         <abbr class="published" title="2014-06-20T14:48:00">
                 Fri 20 June 2014
         </abbr>
 
         <address class="vcard author">
-                By <a class="url fn" href="../author/anna-lukasiak.html">Anna Lukasiak</a>
+                By <a class="url fn" href="/author/anna-lukasiak.html">Anna Lukasiak</a>
         </address>
-<p>In <a href="../category/technical.html">Technical</a>. </p>
-<p>tags: <a href="../tag/python.html">python</a><a href="../tag/pelican.html">Pelican</a></p>
-</footer><!-- /.post-info --><p>This blog post documents the setup done to create <a href="http://openjerseycity.org/pelican">OpenJC Blog</a> and instructions on how to create and add a new post.</p>
-<p>Instructions used to create the OpenJC Blog can be found on <a href="http://docs.getpelican.com/en/3.3.0/tips.html#publishing-to-github">Pelican on Github Pages</a> and <a href="http://docs.getpelican.com/en/3.3.0/">Pelican Documentation</a>.  They include configuration options, plug-ins and theming not included in this post.</p>
+<p>In <a href="/category/technical.html">Technical</a>. </p>
+<p>tags: <a href="/tag/python.html">python</a><a href="/tag/pelican.html">Pelican</a></p>
+</footer><!-- /.post-info --><p>This blog post documents the setup done to create <a href="http://datagallery.io/pelican">Data Gallery Blog</a> and instructions on how to create and add a new post.</p>
+<p>Instructions used to create the Data Gallery Blog can be found on <a href="http://docs.getpelican.com/en/3.3.0/tips.html#publishing-to-github">Pelican on Github Pages</a> and <a href="http://docs.getpelican.com/en/3.3.0/">Pelican Documentation</a>.  They include configuration options, plug-ins and theming not included in this post.</p>
 <h2>Installing Python</h2>
 <p>Pelican currently runs best on Python 2.7.x, earlier versions are not supported and it's not yet fully tested on Python 3.3.  To confirm if you have the required Python 2.7.x version, open up the Terminal application, and run:</p>
 <div class="highlight"><pre><span class="n">python</span> <span class="o">--</span><span class="n">version</span>
@@ -72,7 +72,7 @@
 
 
 <span class="o">&gt;</span> <span class="n">Where</span> <span class="k">do</span> <span class="n">you</span> <span class="n">want</span> <span class="n">to</span> <span class="n">create</span> <span class="n">your</span> <span class="n">new</span> <span class="n">web</span> <span class="n">site</span><span class="o">?</span> <span class="p">[.]</span> 
-<span class="o">&gt;</span> <span class="n">What</span> <span class="n">will</span> <span class="n">be</span> <span class="n">the</span> <span class="n">title</span> <span class="n">of</span> <span class="n">this</span> <span class="n">web</span> <span class="n">site</span><span class="o">?</span> <span class="n">OpenJC</span> <span class="n">Blog</span>
+<span class="o">&gt;</span> <span class="n">What</span> <span class="n">will</span> <span class="n">be</span> <span class="n">the</span> <span class="n">title</span> <span class="n">of</span> <span class="n">this</span> <span class="n">web</span> <span class="n">site</span><span class="o">?</span> <span class="n">Data</span> <span class="n">Gallery</span> <span class="n">Blog</span> 
 <span class="o">&gt;</span> <span class="n">Who</span> <span class="n">will</span> <span class="n">be</span> <span class="n">the</span> <span class="n">author</span> <span class="n">of</span> <span class="n">this</span> <span class="n">web</span> <span class="n">site</span><span class="o">?</span> <span class="n">Anna</span> <span class="n">Lukasiak</span>
 <span class="o">&gt;</span> <span class="n">What</span> <span class="n">will</span> <span class="n">be</span> <span class="n">the</span> <span class="k">default</span> <span class="n">language</span> <span class="n">of</span> <span class="n">this</span> <span class="n">web</span> <span class="n">site</span><span class="o">?</span> <span class="p">[</span><span class="n">en</span><span class="p">]</span> 
 <span class="o">&gt;</span> <span class="n">Do</span> <span class="n">you</span> <span class="n">want</span> <span class="n">to</span> <span class="n">specify</span> <span class="n">a</span> <span class="n">URL</span> <span class="n">prefix</span><span class="o">?</span> <span class="n">e</span><span class="p">.</span><span class="n">g</span><span class="p">.,</span> <span class="n">http</span><span class="o">:</span><span class="c1">//example.com   (Y/n) </span>
@@ -121,7 +121,7 @@
 <li><a href="http://asciidoc.org/">AsciiDoc</a></li>
 <li><a href="http://redcloth.org/textile/writing-paragraph-text/">textile</a></li>
 </ul>
-<p>For OpenJC, we will use Markdown, a text-to-HTML conversion tool for web writers. “Markdown” is two things: (1) a plain text formatting syntax; and (2) a software tool that converts the plain text formatting to HTML.  The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible.</p>
+<p>For Data Gallery, we will use Markdown, a text-to-HTML conversion tool for web writers. “Markdown” is two things: (1) a plain text formatting syntax; and (2) a software tool that converts the plain text formatting to HTML.  The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible.</p>
 <p>You will need to install Markdown using pip:</p>
 <div class="highlight"><pre><span class="n">pip</span> <span class="n">install</span> <span class="n">Markdown</span>
 </pre></div>
@@ -187,18 +187,18 @@
                 <div class="blogroll">
                         <h2>blogroll</h2>
                         <ul>
-                            <li><a href="http://openjerseycity.org/">OpenJC</a></li>
-                            <li><a href="http://codeforamerica.org/">CodeForAmerica</a></li>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
                         </ul>
                 </div><!-- /.blogroll -->
                 <div class="social">
                         <h2>social</h2>
                         <ul>
 
-                            <li><a href="https://twitter.com/OpenJerseyCity">@OpenJerseyCity</a></li>
-                            <li><a href="https://www.facebook.com/OpenJC">OpenJC FB</a></li>
-                            <li><a href="http://meetup.com/Open-JC">Meetup</a></li>
-                            <li><a href="https://github.com/OpenJC">GitHub</a></li>
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
                         </ul>
                 </div><!-- /.social -->
         </section><!-- /#extras -->
